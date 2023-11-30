@@ -48,6 +48,6 @@ struct GifView: View {
 struct GifView_Previews: PreviewProvider {
     static var previews: some View {
         let vm = MockupData.gifsList[0]
-        GifView(image: vm.images.fixed_width_small.url, title: vm.title, width: "100", height: "100")
+        GifView(image: vm.images.fixed_width_small.url!, title: vm.title, width: "100", height: "100")
     }
 }
