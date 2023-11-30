@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEK-ym-la4">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©23devs.com " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wPh-e6-aA6">
+                                        <rect key="frame" x="140.33333333333334" y="791.66666666666663" width="112.66666666666666" height="20.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jagga Box" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="8Ur-X3-oIJ">
+                                        <rect key="frame" x="109.66666666666667" y="94" width="173.66666666666663" height="43"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jagga" translatesAutoresizingMaskIntoConstraints="NO" id="8tP-1m-OPa">
+                                        <rect key="frame" x="76.666666666666686" y="306" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="aV3-JI-j3A"/>
+                                            <constraint firstAttribute="width" constant="240" id="fep-bC-wjz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unbox funny pictures for all occasions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIK-r6-HLK">
+                                        <rect key="frame" x="39.333333333333343" y="566" width="314.33333333333326" height="42.666666666666629"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.10196078431372549" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wPh-e6-aA6" firstAttribute="centerX" secondItem="yEK-ym-la4" secondAttribute="centerX" id="0w1-Hr-6xp"/>
+                                    <constraint firstItem="wIK-r6-HLK" firstAttribute="width" secondItem="yEK-ym-la4" secondAttribute="width" multiplier="0.8" id="I56-NF-2ZZ"/>
+                                    <constraint firstItem="8Ur-X3-oIJ" firstAttribute="top" secondItem="yEK-ym-la4" secondAttribute="top" constant="94" id="OnY-ac-KRp"/>
+                                    <constraint firstItem="wIK-r6-HLK" firstAttribute="top" secondItem="8tP-1m-OPa" secondAttribute="bottom" constant="20" id="VGB-Gw-T8J"/>
+                                    <constraint firstItem="8tP-1m-OPa" firstAttribute="centerX" secondItem="yEK-ym-la4" secondAttribute="centerX" id="aEK-ul-lZ3"/>
+                                    <constraint firstAttribute="bottom" secondItem="wPh-e6-aA6" secondAttribute="bottom" constant="40" id="hPp-fk-hRd"/>
+                                    <constraint firstItem="8tP-1m-OPa" firstAttribute="centerY" secondItem="yEK-ym-la4" secondAttribute="centerY" id="hYM-EK-XQZ"/>
+                                    <constraint firstItem="8Ur-X3-oIJ" firstAttribute="centerX" secondItem="yEK-ym-la4" secondAttribute="centerX" id="pBD-Bk-zcc"/>
+                                    <constraint firstItem="wIK-r6-HLK" firstAttribute="centerX" secondItem="yEK-ym-la4" secondAttribute="centerX" id="t3q-Zu-YrZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="0.23529411764705882" green="0.2196078431372549" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yEK-ym-la4" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="9o3-4t-oTv"/>
+                            <constraint firstItem="yEK-ym-la4" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="Fc1-L7-ISf"/>
+                            <constraint firstItem="yEK-ym-la4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="LaJ-O5-OR3"/>
+                            <constraint firstAttribute="bottom" secondItem="yEK-ym-la4" secondAttribute="bottom" id="mLG-lS-eI3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jagga" width="1024" height="1024"/>
+    </resources>
+</document>

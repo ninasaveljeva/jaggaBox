@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C4E31C4E-50E7-40AB-A4F0-5656373A9642"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87E02825-03FC-4E83-B9D6-DDD4BBC3B89B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "giphyApp/Views/PredefinedSearchView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "87E02825-03FC-4E83-B9D6-DDD4BBC3B89B - c916064a8e96fbec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #3 () -&gt; () in giphyApp.PredefinedSearchView.body.getter : some"
+                  moduleName = "giphyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ninasaveljeva/Documents/projects/jaggaBox/giphyApp/Views/PredefinedSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "87E02825-03FC-4E83-B9D6-DDD4BBC3B89B - 3276fa99a7f4925d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #3 () -&gt; () in giphyApp.PredefinedSearchView.body.getter : some"
+                  moduleName = "giphyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ninasaveljeva/Documents/projects/jaggaBox/giphyApp/Views/PredefinedSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "87E02825-03FC-4E83-B9D6-DDD4BBC3B89B - 1837f87ce42d37ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #3 () -&gt; () in giphyApp.PredefinedSearchView.body.getter : some"
+                  moduleName = "giphyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ninasaveljeva/Documents/projects/jaggaBox/giphyApp/Views/PredefinedSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "607102F6-28E4-4896-99BC-36D2364562C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "giphyApp/Service/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "searchImagesBy(q:limit:offset:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "607102F6-28E4-4896-99BC-36D2364562C5 - f6352d392800bc1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "giphyApp.ApiService.searchImagesBy(q: Swift.String, limit: Swift.String, offset: Swift.String, completion: (Swift.Result&lt;giphyApp.ImageModelResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "giphyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ninasaveljeva/Documents/projects/jaggaBox/giphyApp/Service/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "2308">
+               </Location>
+               <Location
+                  uuid = "607102F6-28E4-4896-99BC-36D2364562C5 - f6352d392800bc1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "giphyApp.ApiService.searchImagesBy(q: Swift.String, limit: Swift.String, offset: Swift.String, completion: (Swift.Result&lt;giphyApp.ImageModelResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "giphyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ninasaveljeva/Documents/projects/jaggaBox/giphyApp/Service/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "2456">
+               </Location>
+               <Location
+                  uuid = "607102F6-28E4-4896-99BC-36D2364562C5 - f6352d392800bc1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "giphyApp.ApiService.searchImagesBy(q: Swift.String, limit: Swift.String, offset: Swift.String, completion: (Swift.Result&lt;giphyApp.ImageModelResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "giphyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ninasaveljeva/Documents/projects/jaggaBox/giphyApp/Service/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "3160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48CC9A6B-12D8-4C75-9389-2B435AA96B76"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "giphyApp/Service/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "searchImagesBy(q:limit:offset:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "702B7257-B4F8-47EC-A4C3-6FFF5BBD2BA7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "giphyApp/Service/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "searchImagesBy(q:limit:offset:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "702B7257-B4F8-47EC-A4C3-6FFF5BBD2BA7 - f6352d392800bd99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "giphyApp.ApiService.searchImagesBy(q: Swift.String, limit: Swift.String, offset: Swift.String, completion: (Swift.Result&lt;giphyApp.ImageModelResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "giphyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ninasaveljeva/Documents/projects/jaggaBox/giphyApp/Service/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "2528">
+               </Location>
+               <Location
+                  uuid = "702B7257-B4F8-47EC-A4C3-6FFF5BBD2BA7 - bccf2605b9616eb3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in giphyApp.ApiService.searchImagesBy(q: Swift.String, limit: Swift.String, offset: Swift.String, completion: (Swift.Result&lt;giphyApp.ImageModelResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "giphyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ninasaveljeva/Documents/projects/jaggaBox/giphyApp/Service/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
