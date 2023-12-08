@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseCrashlytics
 
 struct MenuButton: View {
     let buttonTitle: String
@@ -47,8 +48,7 @@ struct MenuView: View {
     var body: some View {
         NavigationStack {
             GeometryReader { geometry in
-                VStack (alignment: .center, spacing: 10) {
-                    
+                VStack (alignment: .center, spacing: 10) {                    
                     VStack (alignment: .center, spacing: 6) {
                         HStack{
                             MenuButton(buttonTitle: "Congrats",

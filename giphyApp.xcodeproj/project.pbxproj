@@ -11,10 +11,17 @@
 		CCE266242B10902E002AB4C5 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE266232B10902E002AB4C5 /* MenuView.swift */; };
 		CCE266282B10A32B002AB4C5 /* PredefinedSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE266272B10A32B002AB4C5 /* PredefinedSearchView.swift */; };
 		CCE266292B10A32B002AB4C5 /* PredefinedSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE266272B10A32B002AB4C5 /* PredefinedSearchView.swift */; };
+		CCEE248C2B1860E900EDAAE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCEE248B2B1860E900EDAAE9 /* GoogleService-Info.plist */; };
+		CCEE24992B18ACAF00EDAAE9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CCEE24982B18ACAF00EDAAE9 /* FirebaseAnalytics */; };
+		CCEE249B2B18ACAF00EDAAE9 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CCEE249A2B18ACAF00EDAAE9 /* FirebaseAnalyticsSwift */; };
+		CCEE249D2B18ACAF00EDAAE9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CCEE249C2B18ACAF00EDAAE9 /* FirebaseCrashlytics */; };
+		CCEE249F2B18ACD600EDAAE9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CCEE249E2B18ACD600EDAAE9 /* FirebaseAnalytics */; };
+		CCEE24A12B18ACD900EDAAE9 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CCEE24A02B18ACD900EDAAE9 /* FirebaseAnalyticsSwift */; };
+		CCEE24A32B18ACDE00EDAAE9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CCEE24A22B18ACDE00EDAAE9 /* FirebaseCrashlytics */; };
 		CCF5630D2B02123400129D7E /* watchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5630C2B02123400129D7E /* watchAppApp.swift */; };
 		CCF563112B02123500129D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF563102B02123500129D7E /* Assets.xcassets */; };
 		CCF563142B02123500129D7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF563132B02123500129D7E /* Preview Assets.xcassets */; };
-		CCF563172B02123500129D7E /* watchApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CCF5630A2B02123400129D7E /* watchApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCF563172B02123500129D7E /* watchAppWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CCF5630A2B02123400129D7E /* watchAppWatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CCF5631E2B02132300129D7E /* GifObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5631D2B02132300129D7E /* GifObject.swift */; };
 		CCF5631F2B0213BF00129D7E /* GifObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5631D2B02132300129D7E /* GifObject.swift */; };
 		CCF563232B0213EB00129D7E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF563212B0213EB00129D7E /* Configuration.swift */; };
@@ -41,6 +48,7 @@
 		CCF7A0AD2AFE4F4B00CC16A6 /* giphyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7A0AC2AFE4F4B00CC16A6 /* giphyAppApp.swift */; };
 		CCF7A0B12AFE4F4C00CC16A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF7A0B02AFE4F4C00CC16A6 /* Assets.xcassets */; };
 		CCF7A0B42AFE4F4C00CC16A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF7A0B32AFE4F4C00CC16A6 /* Preview Assets.xcassets */; };
+		CCF88F642B21E59D005442D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCF88F632B21E59D005442D0 /* GoogleService-Info.plist */; };
 		CCF9110A2B149E1C00DA4534 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CCF911092B149E1C00DA4534 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +69,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				CCF563172B02123500129D7E /* watchApp Watch App.app in Embed Watch Content */,
+				CCF563172B02123500129D7E /* watchAppWatchApp.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,7 +80,8 @@
 		CC3754472B10B3A50085DABB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CCE266232B10902E002AB4C5 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CCE266272B10A32B002AB4C5 /* PredefinedSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredefinedSearchView.swift; sourceTree = "<group>"; };
-		CCF5630A2B02123400129D7E /* watchApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEE248B2B1860E900EDAAE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CCF5630A2B02123400129D7E /* watchAppWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchAppWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF5630C2B02123400129D7E /* watchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchAppApp.swift; sourceTree = "<group>"; };
 		CCF563102B02123500129D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCF563132B02123500129D7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -92,6 +101,7 @@
 		CCF7A0AC2AFE4F4B00CC16A6 /* giphyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giphyAppApp.swift; sourceTree = "<group>"; };
 		CCF7A0B02AFE4F4C00CC16A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCF7A0B32AFE4F4C00CC16A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCF88F632B21E59D005442D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCF911092B149E1C00DA4534 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CCF9110B2B14A2FB00DA4534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +111,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCEE24A32B18ACDE00EDAAE9 /* FirebaseCrashlytics in Frameworks */,
+				CCEE24A12B18ACD900EDAAE9 /* FirebaseAnalyticsSwift in Frameworks */,
+				CCEE249F2B18ACD600EDAAE9 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,15 +121,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCEE249D2B18ACAF00EDAAE9 /* FirebaseCrashlytics in Frameworks */,
+				CCEE249B2B18ACAF00EDAAE9 /* FirebaseAnalyticsSwift in Frameworks */,
+				CCEE24992B18ACAF00EDAAE9 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCEE24902B1876DC00EDAAE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CCF5630B2B02123400129D7E /* watchApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				CCF88F632B21E59D005442D0 /* GoogleService-Info.plist */,
 				CCF5630C2B02123400129D7E /* watchAppApp.swift */,
 				CCF6CAC82B0E03720072994B /* Views */,
 				CCF563102B02123500129D7E /* Assets.xcassets */,
@@ -197,6 +221,7 @@
 				CCF7A0AB2AFE4F4B00CC16A6 /* giphyApp */,
 				CCF5630B2B02123400129D7E /* watchApp Watch App */,
 				CCF7A0AA2AFE4F4B00CC16A6 /* Products */,
+				CCEE24902B1876DC00EDAAE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				CCF7A0A92AFE4F4B00CC16A6 /* giphyApp.app */,
-				CCF5630A2B02123400129D7E /* watchApp Watch App.app */,
+				CCF5630A2B02123400129D7E /* watchAppWatchApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				CCF9110B2B14A2FB00DA4534 /* Info.plist */,
+				CCEE248B2B1860E900EDAAE9 /* GoogleService-Info.plist */,
 				CCF7A0AC2AFE4F4B00CC16A6 /* giphyAppApp.swift */,
 				CCF563342B02292D00129D7E /* Styles */,
 				CCF563202B0213C500129D7E /* Service */,
@@ -236,21 +262,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CCF563092B02123400129D7E /* watchApp Watch App */ = {
+		CCF563092B02123400129D7E /* watchAppWatchApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCF5631B2B02123500129D7E /* Build configuration list for PBXNativeTarget "watchApp Watch App" */;
+			buildConfigurationList = CCF5631B2B02123500129D7E /* Build configuration list for PBXNativeTarget "watchAppWatchApp" */;
 			buildPhases = (
 				CCF563062B02123400129D7E /* Sources */,
 				CCF563072B02123400129D7E /* Frameworks */,
 				CCF563082B02123400129D7E /* Resources */,
+				CCEE248F2B18745500EDAAE9 /* Crashlytics */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "watchApp Watch App";
+			name = watchAppWatchApp;
+			packageProductDependencies = (
+				CCEE249E2B18ACD600EDAAE9 /* FirebaseAnalytics */,
+				CCEE24A02B18ACD900EDAAE9 /* FirebaseAnalyticsSwift */,
+				CCEE24A22B18ACDE00EDAAE9 /* FirebaseCrashlytics */,
+			);
 			productName = "watchApp Watch App";
-			productReference = CCF5630A2B02123400129D7E /* watchApp Watch App.app */;
+			productReference = CCF5630A2B02123400129D7E /* watchAppWatchApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CCF7A0A82AFE4F4B00CC16A6 /* giphyApp */ = {
@@ -261,6 +293,7 @@
 				CCF7A0A62AFE4F4B00CC16A6 /* Frameworks */,
 				CCF7A0A72AFE4F4B00CC16A6 /* Resources */,
 				CCF563182B02123500129D7E /* Embed Watch Content */,
+				CCEE248D2B1861E600EDAAE9 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -269,6 +302,9 @@
 			);
 			name = giphyApp;
 			packageProductDependencies = (
+				CCEE24982B18ACAF00EDAAE9 /* FirebaseAnalytics */,
+				CCEE249A2B18ACAF00EDAAE9 /* FirebaseAnalyticsSwift */,
+				CCEE249C2B18ACAF00EDAAE9 /* FirebaseCrashlytics */,
 			);
 			productName = giphyApp;
 			productReference = CCF7A0A92AFE4F4B00CC16A6 /* giphyApp.app */;
@@ -302,13 +338,14 @@
 			);
 			mainGroup = CCF7A0A02AFE4F4B00CC16A6;
 			packageReferences = (
+				CCEE24972B18ACAF00EDAAE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = CCF7A0AA2AFE4F4B00CC16A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CCF7A0A82AFE4F4B00CC16A6 /* giphyApp */,
-				CCF563092B02123400129D7E /* watchApp Watch App */,
+				CCF563092B02123400129D7E /* watchAppWatchApp */,
 			);
 		};
 /* End PBXProject section */
@@ -319,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCF563142B02123500129D7E /* Preview Assets.xcassets in Resources */,
+				CCF88F642B21E59D005442D0 /* GoogleService-Info.plist in Resources */,
 				CCF563112B02123500129D7E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,12 +367,62 @@
 			files = (
 				CC3754482B10B3A50085DABB /* Launch Screen.storyboard in Resources */,
 				CCF7A0B42AFE4F4C00CC16A6 /* Preview Assets.xcassets in Resources */,
+				CCEE248C2B1860E900EDAAE9 /* GoogleService-Info.plist in Resources */,
 				CCF9110A2B149E1C00DA4534 /* README.md in Resources */,
 				CCF7A0B12AFE4F4C00CC16A6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CCEE248D2B1861E600EDAAE9 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+		CCEE248F2B18745500EDAAE9 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCF563062B02123400129D7E /* Sources */ = {
@@ -384,7 +472,7 @@
 /* Begin PBXTargetDependency section */
 		CCF563162B02123500129D7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CCF563092B02123400129D7E /* watchApp Watch App */;
+			target = CCF563092B02123400129D7E /* watchAppWatchApp */;
 			targetProxy = CCF563152B02123500129D7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -397,6 +485,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"watchApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = QGW6TP9GF7;
 				ENABLE_PREVIEWS = YES;
@@ -410,6 +499,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.23devs.jaggabox.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -441,6 +531,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.23devs.jaggabox.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -574,6 +665,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"giphyApp/Preview Content\"";
 				DEVELOPMENT_TEAM = QGW6TP9GF7;
 				ENABLE_PREVIEWS = YES;
@@ -592,6 +684,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.23devs.jaggabox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -626,6 +719,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.23devs.jaggabox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -637,7 +731,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CCF5631B2B02123500129D7E /* Build configuration list for PBXNativeTarget "watchApp Watch App" */ = {
+		CCF5631B2B02123500129D7E /* Build configuration list for PBXNativeTarget "watchAppWatchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCF563192B02123500129D7E /* Debug */,
@@ -665,6 +759,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCEE24972B18ACAF00EDAAE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CCEE24982B18ACAF00EDAAE9 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCEE24972B18ACAF00EDAAE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CCEE249A2B18ACAF00EDAAE9 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCEE24972B18ACAF00EDAAE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		CCEE249C2B18ACAF00EDAAE9 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCEE24972B18ACAF00EDAAE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		CCEE249E2B18ACD600EDAAE9 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCEE24972B18ACAF00EDAAE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CCEE24A02B18ACD900EDAAE9 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCEE24972B18ACAF00EDAAE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		CCEE24A22B18ACDE00EDAAE9 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCEE24972B18ACAF00EDAAE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCF7A0A12AFE4F4B00CC16A6 /* Project object */;
 }
