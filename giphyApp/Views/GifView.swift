@@ -16,16 +16,33 @@ struct GifView: View {
     var body: some View {
         
         VStack(alignment: .center, spacing: 10) {
-            AsyncImage(url: URL(string: "\(image)")) { image in
-                image
-                    .resizable()
-                    //.frame(width: w, height: h)
-                    .aspectRatio(contentMode: .fit)
-            } placeholder: {
-                ProgressView()
-                    .tint(.red)
-            }
+//            AsyncImage(url: URL(string: "\(image)")) { image in
+//                image
+//                    .resizable()
+//                    //.frame(width: w, height: h)
+//                    .aspectRatio(contentMode: .fit)
+//            } placeholder: {
+//                ProgressView()
+//                    .tint(.red)
+//            }
 
+            AsyncImage(url: URL(string: "\(image)")) { phase in
+                if let image = phase.image {
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                } else if phase.error != nil {
+                    // Indicates an error.
+                    Text("Error loading image: \(phase.error?.localizedDescription ?? "")")
+                        .font(.footnote)
+                        .foregroundColor(.red)
+                } else {
+                    // Acts as a placeholder.
+                    ProgressView()
+                        .tint(.blue)
+                }
+            }
+                
             HStack(alignment: .bottom){
                 Text(title)
                     .font(.headline)

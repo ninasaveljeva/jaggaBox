@@ -11,6 +11,7 @@
 		CCE266242B10902E002AB4C5 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE266232B10902E002AB4C5 /* MenuView.swift */; };
 		CCE266282B10A32B002AB4C5 /* PredefinedSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE266272B10A32B002AB4C5 /* PredefinedSearchView.swift */; };
 		CCE266292B10A32B002AB4C5 /* PredefinedSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE266272B10A32B002AB4C5 /* PredefinedSearchView.swift */; };
+		CCE81E252B29ACEC00EC5EF7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE81E242B29ACEC00EC5EF7 /* SearchView.swift */; };
 		CCEE248C2B1860E900EDAAE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCEE248B2B1860E900EDAAE9 /* GoogleService-Info.plist */; };
 		CCEE24992B18ACAF00EDAAE9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CCEE24982B18ACAF00EDAAE9 /* FirebaseAnalytics */; };
 		CCEE249B2B18ACAF00EDAAE9 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CCEE249A2B18ACAF00EDAAE9 /* FirebaseAnalyticsSwift */; };
@@ -41,7 +42,6 @@
 		CCF5BCB22B0F5B5E00817EC8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5BCB12B0F5B5E00817EC8 /* MenuView.swift */; };
 		CCF6CACA2B0E04A40072994B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6CAC92B0E04A40072994B /* MainView.swift */; };
 		CCF6CACC2B0E06390072994B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6CACB2B0E06390072994B /* SearchView.swift */; };
-		CCF6CACD2B0E063E0072994B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6CACB2B0E06390072994B /* SearchView.swift */; };
 		CCF6CACE2B0E06420072994B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6CAC92B0E04A40072994B /* MainView.swift */; };
 		CCF6CAD02B0E143A0072994B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6CACF2B0E143A0072994B /* SearchViewModel.swift */; };
 		CCF6CAD12B0E15650072994B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6CACF2B0E143A0072994B /* SearchViewModel.swift */; };
@@ -80,6 +80,7 @@
 		CC3754472B10B3A50085DABB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CCE266232B10902E002AB4C5 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CCE266272B10A32B002AB4C5 /* PredefinedSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredefinedSearchView.swift; sourceTree = "<group>"; };
+		CCE81E242B29ACEC00EC5EF7 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		CCEE248B2B1860E900EDAAE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCF5630A2B02123400129D7E /* watchAppWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchAppWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF5630C2B02123400129D7E /* watchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchAppApp.swift; sourceTree = "<group>"; };
@@ -208,6 +209,7 @@
 		CCF6CAC82B0E03720072994B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CCE81E242B29ACEC00EC5EF7 /* SearchView.swift */,
 				CCE266232B10902E002AB4C5 /* MenuView.swift */,
 			);
 			path = Views;
@@ -318,7 +320,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					CCF563092B02123400129D7E = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -429,7 +431,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF6CACD2B0E063E0072994B /* SearchView.swift in Sources */,
 				CCF563372B022A7200129D7E /* GifView.swift in Sources */,
 				CCF5632F2B0222E000129D7E /* TrendingGifsView.swift in Sources */,
 				CCF563262B02162A00129D7E /* Configuration.swift in Sources */,
@@ -440,6 +441,7 @@
 				CCE266242B10902E002AB4C5 /* MenuView.swift in Sources */,
 				CCF563252B02162700129D7E /* ApiService.swift in Sources */,
 				CCF6CACE2B0E06420072994B /* MainView.swift in Sources */,
+				CCE81E252B29ACEC00EC5EF7 /* SearchView.swift in Sources */,
 				CCF5630D2B02123400129D7E /* watchAppApp.swift in Sources */,
 				CCF563302B0222E800129D7E /* GifsViewModel.swift in Sources */,
 				CCF563382B022A7C00129D7E /* GStyles.swift in Sources */,
@@ -484,7 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"watchApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = QGW6TP9GF7;
@@ -498,7 +500,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.23devs.jaggabox.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,7 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"watchApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = QGW6TP9GF7;
 				ENABLE_PREVIEWS = YES;
@@ -530,7 +532,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.23devs.jaggabox.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,6 +549,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -579,6 +582,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -607,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -639,6 +644,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -664,7 +670,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"giphyApp/Preview Content\"";
 				DEVELOPMENT_TEAM = QGW6TP9GF7;
@@ -700,7 +706,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"giphyApp/Preview Content\"";
 				DEVELOPMENT_TEAM = QGW6TP9GF7;
 				ENABLE_PREVIEWS = YES;

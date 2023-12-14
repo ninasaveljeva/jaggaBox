@@ -13,19 +13,27 @@ struct TrendingGifsView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 12) {
-                if let gifs = gifsViewModel.gifs {
-                    ForEach(gifs, id: \.self) { gif in
-                        GifView(image: gif.images.fixed_width.url,
-                                title: gif.title,
-                                width: gif.images.fixed_width.width,
-                                height: gif.images.fixed_width.height)
-                        .fixedSize(horizontal: false, vertical: true)
+                switch (gifsViewModel.state) {
+                case .error(let message):
+                    Text(message)
+                        .font(.footnote)
+                        .foregroundColor(.red)
+                default:
+                    
+                    if let gifs = gifsViewModel.gifs {
+                        ForEach(gifs, id: \.self) { gif in
+                            GifView(image: gif.images.fixed_width.url,
+                                    title: gif.title,
+                                    width: gif.images.fixed_width.width,
+                                    height: gif.images.fixed_width.height)
+                            .fixedSize(horizontal: false, vertical: true)
+                            
+                        }
+                        .navigationTitle("Trending")
+                        .padding([.leading, .trailing], 10)
+                        
                         
                     }
-                    .navigationTitle("Trending")
-                    .padding([.leading, .trailing], 10)
-                    
-                    
                 }
             }
             .frame(maxWidth: .infinity, alignment: .center)

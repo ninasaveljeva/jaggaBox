@@ -15,7 +15,25 @@ struct SearchView: View {
         
         ScrollView {
             
-            VStack(spacing: 12) {                
+            VStack(spacing: 12) {
+                VStack {
+                    Text("Click button to add a search word")
+                        .foregroundColor(.white)
+                        .font(.caption)
+                    TextFieldLink {
+                        Image(systemName: "magnifyingglass")
+                            .imageScale(.large)
+                            .foregroundColor(.accentColor)
+                    } onSubmit: { value in
+                        self.searchData = value
+                        print("text11: \(searchData)")
+                        runSearch()
+                    }
+                    Text("Search result for: \(searchData)")
+                        .foregroundColor(.white)
+                        .font(.caption)
+                }
+                
                 switch (searchViewModel.state) {
                 case .error(let message):
                     Text(message)
@@ -36,18 +54,10 @@ struct SearchView: View {
                 }
             }
             .frame(maxWidth: .infinity, alignment: .center)
-        }
-#if os(iOS)
-        .background(Color("BgColor"))
-        .foregroundColor(Color("FgColor"))
-#endif
-        .searchable(text: $searchData, prompt: "Look for")
-        .onSubmit(of: .search) {
-            print("text: \(searchData)")
-            runSearch()
+            
         }
         .foregroundColor(Color("BgColor"))
-
+        
     }
     
     func runSearch() {
@@ -64,6 +74,7 @@ struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             SearchView(searchViewModel: SearchViewModel(with: MockupData.gifsList))
+            
         }
     }
 }

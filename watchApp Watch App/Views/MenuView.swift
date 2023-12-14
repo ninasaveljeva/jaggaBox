@@ -22,7 +22,7 @@ struct MenuButton: View {
                     Image(systemName: buttonImageName)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 50, height: 50)
+                        .frame(width: 45, height: 45)
                 }
                 Text(buttonTitle)
                     .font(.caption2)
@@ -48,7 +48,7 @@ struct MenuView: View {
     var body: some View {
         NavigationStack {
             GeometryReader { geometry in
-                VStack (alignment: .center, spacing: 10) {                    
+                VStack (alignment: .center, spacing: 10) {
                     VStack (alignment: .center, spacing: 6) {
                         HStack{
                             MenuButton(buttonTitle: "Congrats",
@@ -58,7 +58,7 @@ struct MenuView: View {
                                        action: {showLove = true},
                                        buttonImageName: "heart")
                         }
-                        .frame(height: geometry.size.height/2)
+                        .frame(height: abs(geometry.size.height - 10)/2)
                         
                         HStack {
                             MenuButton(buttonTitle: "Search",
@@ -69,11 +69,13 @@ struct MenuView: View {
                                        buttonImageName: "list.bullet.clipboard")
                             
                         }
-                        .frame(height: geometry.size.height/2)
+                        .frame(height: abs(geometry.size.height - 10)/2)
                     }
                     .padding([.leading, .trailing], 10)
+
                     Text("Powered by Giphy")
                         .font(.footnote)
+                    
                 }
                 .fixedSize(horizontal: false, vertical: true)
                 .navigationDestination(isPresented: $showTrending) {
