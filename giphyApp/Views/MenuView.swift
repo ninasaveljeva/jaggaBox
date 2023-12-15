@@ -11,7 +11,7 @@ struct MenuView: View {
     @StateObject var searchVM = SearchViewModel(service: ApiService.shared)
     
     @State private var searchCategogies: [SearchCategory] = [
-        SearchCategory(title: "i love you", img: "heart"),
+        SearchCategory(title: "I Love You", img: "heart"),
         SearchCategory(title: "Congrats", img: "gift"),
         SearchCategory(title: "Morning", img: "sun.max"),
         SearchCategory(title: "Good Luck", img: "hand.thumbsup"),

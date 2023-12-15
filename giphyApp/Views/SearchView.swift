@@ -21,19 +21,31 @@ struct SearchView: View {
                     Text(message)
                         .font(.footnote)
                         .foregroundColor(.red)
+                case .loading:
+                    ProgressView()
+                        .tint(.blue)
                 default:
-                    if let gifs = searchViewModel.gifs {
-                        ForEach(gifs, id: \.self) { gif in
-                            GifView(image: gif.images.fixed_width.url,
-                                    title: gif.title,
-                                    width: gif.images.fixed_width.width,
-                                    height: gif.images.fixed_width.height)
-                            .fixedSize(horizontal: false, vertical: true)
+                    if (searchData != "") {
+                        Text("Search results for: \(searchData)")
+
+                        if let gifs = searchViewModel.gifs {
+                            ForEach(gifs, id: \.self) { gif in
+                                GifView(image: gif.images.fixed_width.url,
+                                        title: gif.title,
+                                        width: gif.images.fixed_width.width,
+                                        height: gif.images.fixed_width.height)
+                                .fixedSize(horizontal: false, vertical: true)
+                            }
+                            .navigationTitle("Search")
+                            .padding([.leading, .trailing], 10)
+                        } else {
+                            Text("No data found")
                         }
-                        .navigationTitle("Search")
-                        .padding([.leading, .trailing], 10)
+                    } else {
+                        Text("Put a word to search for an images")
                     }
                 }
+
             }
             .frame(maxWidth: .infinity, alignment: .center)
         }
@@ -41,7 +53,7 @@ struct SearchView: View {
         .background(Color("BgColor"))
         .foregroundColor(Color("FgColor"))
 #endif
-        .searchable(text: $searchData, prompt: "Look for")
+        .searchable(text: $searchData, placement: .navigationBarDrawer(displayMode: .always), prompt: "Look for")
         .onSubmit(of: .search) {
             print("text: \(searchData)")
             runSearch()

@@ -15,7 +15,7 @@ class GifsViewModel: ObservableObject {
         case error(message: String)
         case loaded(gifs: [GifObject]?)
     }
-    @Published var state: State = .loaded(gifs: nil)
+    @Published var state: State = .loading
     
     init (service: ApiServicesProtocol) {
         self.service = service
@@ -27,6 +27,7 @@ class GifsViewModel: ObservableObject {
     }
     
     func fetchList() {
+        self.state = .loading
         if let service = service {
 
             service.fetchImageList { [weak self] result in

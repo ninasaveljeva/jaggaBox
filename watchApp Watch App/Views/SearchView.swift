@@ -29,12 +29,15 @@ struct SearchView: View {
                         print("text11: \(searchData)")
                         runSearch()
                     }
-                    Text("Search result for: \(searchData)")
+                    Text("Search results for: \(searchData)")
                         .foregroundColor(.white)
                         .font(.caption)
                 }
                 
                 switch (searchViewModel.state) {
+                case .loading:
+                    ProgressView()
+                        .tint(.blue)
                 case .error(let message):
                     Text(message)
                         .font(.footnote)

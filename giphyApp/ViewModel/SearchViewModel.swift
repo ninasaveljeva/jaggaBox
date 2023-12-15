@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class SearchViewModel: ObservableObject {
     private var service: ApiServicesProtocol?
     var gifs: [GifObject]?
@@ -49,6 +50,7 @@ class SearchViewModel: ObservableObject {
     }
     
     func fetchListBy(searchText: String, limit: String?, offset: String?) {
+        self.state = .loading
         if let service = service {
             let lmt = limit ?? AppConfiguration.itemsPerPape
             let ofst = offset ?? "0"
@@ -69,6 +71,7 @@ class SearchViewModel: ObservableObject {
         
 
     func search() {
+        self.state = .loading
         if let service = service {
             service.searchImagesBy(q: searchText, limit: "\(limit)", offset: "\(offset)"){ [weak self] result in
                 switch result {
@@ -92,6 +95,9 @@ class SearchViewModel: ObservableObject {
     }
     
     func searchA() async {
+        DispatchQueue.main.async {
+            self.state = .loading
+        }
         if let service = service {
             let result = await service.searchImagesByA(q: searchText, limit: "\(limit)", offset: "\(offset)")
             switch result {

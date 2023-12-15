@@ -16,16 +16,6 @@ struct GifView: View {
     var body: some View {
         
         VStack(alignment: .center, spacing: 10) {
-//            AsyncImage(url: URL(string: "\(image)")) { image in
-//                image
-//                    .resizable()
-//                    //.frame(width: w, height: h)
-//                    .aspectRatio(contentMode: .fit)
-//            } placeholder: {
-//                ProgressView()
-//                    .tint(.red)
-//            }
-
             AsyncImage(url: URL(string: "\(image)")) { phase in
                 if let image = phase.image {
                     image

@@ -18,6 +18,9 @@ struct TrendingGifsView: View {
                     Text(message)
                         .font(.footnote)
                         .foregroundColor(.red)
+                case .loading:
+                    ProgressView()
+                        .tint(.blue)
                 default:
                     
                     if let gifs = gifsViewModel.gifs {

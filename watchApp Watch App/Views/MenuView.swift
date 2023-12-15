@@ -12,7 +12,7 @@ struct MenuView: View {
     @StateObject var searchVM = SearchViewModel(service: ApiService.shared)
     
     @State private var searchCategogies: [SearchCategory] = [
-        SearchCategory(title: "i love you", img: "heart"),
+        SearchCategory(title: "I Love You", img: "heart"),
         SearchCategory(title: "Congrats", img: "gift"),
         SearchCategory(title: "Search", img: "magnifyingglass"),
         SearchCategory(title: "Trending", img: "list.bullet.clipboard")
@@ -40,7 +40,6 @@ struct MenuView: View {
                         .font(.footnote)
                     
                 }
-                .frame(width: geometry.size.width, height: geometry.size.height)
                 .fixedSize(horizontal: false, vertical: true)
                 .navigationDestination(for: SearchCategory.self) { cat in
                     if (cat.title == "Trending") {
