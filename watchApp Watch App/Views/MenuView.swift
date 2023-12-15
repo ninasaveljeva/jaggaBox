@@ -8,99 +8,48 @@
 import SwiftUI
 import FirebaseCrashlytics
 
-struct MenuButton: View {
-    let buttonTitle: String
-    let action: () -> Void
-    let buttonImageName: String?
-    
-    var body: some View {
-        Button {
-            action()
-        } label: {
-            VStack {
-                if let buttonImageName = buttonImageName {
-                    Image(systemName: buttonImageName)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 45, height: 45)
-                }
-                Text(buttonTitle)
-                    .font(.caption2)
-            }
-        }
-        .buttonStyle(PlainButtonStyle())
-        .frame(maxWidth: .infinity)
-        .frame(maxHeight: .infinity)
-        .foregroundColor(Color("FgColor"))
-        .background(Color("BgItemColor"))
-        .cornerRadius(15)
-        
-    }
-}
-
-
 struct MenuView: View {
-    @State private var showTrending = false
-    @State private var showSearch = false
-    @State private var showLove = false
-    @State private var showCongats = false
+    @StateObject var searchVM = SearchViewModel(service: ApiService.shared)
+    
+    @State private var searchCategogies: [SearchCategory] = [
+        SearchCategory(title: "i love you", img: "heart"),
+        SearchCategory(title: "Congrats", img: "gift"),
+        SearchCategory(title: "Search", img: "magnifyingglass"),
+        SearchCategory(title: "Trending", img: "list.bullet.clipboard")
+    ]
+    let columns = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
         NavigationStack {
             GeometryReader { geometry in
                 VStack (alignment: .center, spacing: 10) {
-                    VStack (alignment: .center, spacing: 6) {
-                        HStack{
-                            MenuButton(buttonTitle: "Congrats",
-                                       action: {showCongats = true},
-                                       buttonImageName: "gift")
-                            MenuButton(buttonTitle: "Love you",
-                                       action: {showLove = true},
-                                       buttonImageName: "heart")
+                    
+                    LazyVGrid(columns: columns) {
+                        ForEach(searchCategogies, id: \.self) { cat in
+                            NavigationLink(value: cat) {
+                                MenuLink(buttonTitle: cat.title,
+                                         buttonImageName: cat.img)
+                                .frame(height: abs(geometry.size.height - 10)/2)
+                            }
+                            .buttonStyle(PlainButtonStyle())
                         }
-                        .frame(height: abs(geometry.size.height - 10)/2)
-                        
-                        HStack {
-                            MenuButton(buttonTitle: "Search",
-                                       action: {showSearch = true},
-                                       buttonImageName: "magnifyingglass")
-                            MenuButton(buttonTitle: "Trending",
-                                       action: {showTrending = true},
-                                       buttonImageName: "list.bullet.clipboard")
-                            
-                        }
-                        .frame(height: abs(geometry.size.height - 10)/2)
                     }
                     .padding([.leading, .trailing], 10)
-
+                    
                     Text("Powered by Giphy")
                         .font(.footnote)
                     
                 }
+                .frame(width: geometry.size.width, height: geometry.size.height)
                 .fixedSize(horizontal: false, vertical: true)
-                .navigationDestination(isPresented: $showTrending) {
-                    TrendingGifsView(gifsViewModel: GifsViewModel(service: ApiService.shared))
-                }
-                .navigationDestination(isPresented: $showSearch) {
-                    SearchView(searchViewModel: SearchViewModel(service: ApiService.shared))
-                }
-                .navigationDestination(isPresented: $showLove) {
-                    let vm = SearchViewModel(service: ApiService.shared,
-                                             searchText: "i love you",
-                                             pageTitle: "I Love You")
-                    PredefinedSearchView(searchViewModel: vm)
-                    .refreshable {
-                        vm.loadMoreSearch()
+                .navigationDestination(for: SearchCategory.self) { cat in
+                    if (cat.title == "Trending") {
+                        TrendingGifsView(gifsViewModel: GifsViewModel(service: ApiService.shared))
+                    } else if( cat.title == "Search") {
+                        SearchView(searchViewModel: SearchViewModel(service: ApiService.shared))
+                    } else {
+                        PredefinedSearchView(vm: searchVM, txt: cat.title)
                     }
-                }
-                .navigationDestination(isPresented: $showCongats) {
-                    let vm = SearchViewModel(service: ApiService.shared,
-                                             searchText: "Congrats",
-                                             pageTitle: "Congrats")
-                    PredefinedSearchView(searchViewModel: vm)
-                        .refreshable {
-                            vm.loadMoreSearch()
-                        }
                 }
             }
         }

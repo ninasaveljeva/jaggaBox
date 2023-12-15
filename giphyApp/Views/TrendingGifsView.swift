@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TrendingGifsView: View {
-    @ObservedObject var gifsViewModel: GifsViewModel
+    @StateObject var gifsViewModel: GifsViewModel
         
     var body: some View {
         ScrollView {

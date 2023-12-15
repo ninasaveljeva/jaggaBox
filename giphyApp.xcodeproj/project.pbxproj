@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CC3754482B10B3A50085DABB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3754472B10B3A50085DABB /* Launch Screen.storyboard */; };
+		CCDDC3852B2C283F008EA124 /* SearchCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDC3842B2C283F008EA124 /* SearchCategory.swift */; };
+		CCDDC3862B2C283F008EA124 /* SearchCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDC3842B2C283F008EA124 /* SearchCategory.swift */; };
+		CCDDC3882B2C286A008EA124 /* MenuLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDC3872B2C286A008EA124 /* MenuLink.swift */; };
+		CCDDC3892B2C286A008EA124 /* MenuLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDC3872B2C286A008EA124 /* MenuLink.swift */; };
 		CCE266242B10902E002AB4C5 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE266232B10902E002AB4C5 /* MenuView.swift */; };
 		CCE266282B10A32B002AB4C5 /* PredefinedSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE266272B10A32B002AB4C5 /* PredefinedSearchView.swift */; };
 		CCE266292B10A32B002AB4C5 /* PredefinedSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE266272B10A32B002AB4C5 /* PredefinedSearchView.swift */; };
@@ -78,6 +82,8 @@
 
 /* Begin PBXFileReference section */
 		CC3754472B10B3A50085DABB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CCDDC3842B2C283F008EA124 /* SearchCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategory.swift; sourceTree = "<group>"; };
+		CCDDC3872B2C286A008EA124 /* MenuLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLink.swift; sourceTree = "<group>"; };
 		CCE266232B10902E002AB4C5 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CCE266272B10A32B002AB4C5 /* PredefinedSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredefinedSearchView.swift; sourceTree = "<group>"; };
 		CCE81E242B29ACEC00EC5EF7 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 			children = (
 				CCF5631D2B02132300129D7E /* GifObject.swift */,
 				CCF5632D2B02194400129D7E /* MockupData.swift */,
+				CCDDC3842B2C283F008EA124 /* SearchCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				CCF563352B02294B00129D7E /* GStyles.swift */,
+				CCDDC3872B2C286A008EA124 /* MenuLink.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -439,9 +447,11 @@
 				CCE266292B10A32B002AB4C5 /* PredefinedSearchView.swift in Sources */,
 				CCF6CAD12B0E15650072994B /* SearchViewModel.swift in Sources */,
 				CCE266242B10902E002AB4C5 /* MenuView.swift in Sources */,
+				CCDDC3862B2C283F008EA124 /* SearchCategory.swift in Sources */,
 				CCF563252B02162700129D7E /* ApiService.swift in Sources */,
 				CCF6CACE2B0E06420072994B /* MainView.swift in Sources */,
 				CCE81E252B29ACEC00EC5EF7 /* SearchView.swift in Sources */,
+				CCDDC3892B2C286A008EA124 /* MenuLink.swift in Sources */,
 				CCF5630D2B02123400129D7E /* watchAppApp.swift in Sources */,
 				CCF563302B0222E800129D7E /* GifsViewModel.swift in Sources */,
 				CCF563382B022A7C00129D7E /* GStyles.swift in Sources */,
@@ -460,9 +470,11 @@
 				CCF5632B2B02179700129D7E /* TrendingGifsView.swift in Sources */,
 				CCF5632E2B02194400129D7E /* MockupData.swift in Sources */,
 				CCF6CAD02B0E143A0072994B /* SearchViewModel.swift in Sources */,
+				CCDDC3852B2C283F008EA124 /* SearchCategory.swift in Sources */,
 				CCF5BCB22B0F5B5E00817EC8 /* MenuView.swift in Sources */,
 				CCF5631F2B0213BF00129D7E /* GifObject.swift in Sources */,
 				CCF6CACA2B0E04A40072994B /* MainView.swift in Sources */,
+				CCDDC3882B2C286A008EA124 /* MenuLink.swift in Sources */,
 				CCF563232B0213EB00129D7E /* Configuration.swift in Sources */,
 				CCF7A0AD2AFE4F4B00CC16A6 /* giphyAppApp.swift in Sources */,
 				CCF563362B02294B00129D7E /* GStyles.swift in Sources */,

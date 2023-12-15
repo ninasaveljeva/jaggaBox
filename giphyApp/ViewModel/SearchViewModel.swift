@@ -8,9 +8,9 @@
 import Foundation
 class SearchViewModel: ObservableObject {
     private var service: ApiServicesProtocol?
-    @Published var gifs: [GifObject]?
-    @Published var searchText: String = ""
-    @Published var pageTitle: String = ""
+    var gifs: [GifObject]?
+    var searchText: String = ""
+    var pageTitle: String = ""
     var offset: Int = 0
     var limit: Int = Int(AppConfiguration.itemsPerPape)!
     
@@ -41,6 +41,11 @@ class SearchViewModel: ObservableObject {
         self.state = .loaded(gifs: gifs)
         self.searchText = searchText
         self.pageTitle = pageTitle
+    }
+
+    func setSearchData(searchText: String) {
+        self.searchText = searchText
+        self.pageTitle = searchText.capitalized
     }
     
     func fetchListBy(searchText: String, limit: String?, offset: String?) {
